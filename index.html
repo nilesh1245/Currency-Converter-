@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Currency Converter</h2>
+    <form>
+        <!-- Amount -->
+        <div class="amount">
+            <p>Enter Amount</p>
+            <input type="number" value="100" min="1">
+        </div>
+        <!-- Dropdown Section -->
+        <div class="dropdown">
+            <!-- From -->
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+                    <select name="from">
+                    </select>
+                </div>
+            </div>
+            <!-- Exchange Icon -->
+            <div class="icon">
+                <i class="fa-solid fa-right-left"></i>
+            </div>
+            <!-- To -->
+            <div class="to">
+                <p>To</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="India Flag">
+                    <select name="to">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Result -->
+        <div class="msg">
+            100 USD = 8,350 INR
+        </div>
+        <!-- Button -->
+        <button id="btn" type="submit">
+            Get Exchange Rate
+        </button>
+    </form>
+</div>
+<script src="codes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
